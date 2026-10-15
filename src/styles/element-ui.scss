@@ -1,0 +1,330 @@
+// cover some element-ui styles
+$link-color: rgb(239, 248, 255);
+:root {
+  --el-color-primary: #165DFF!important;
+}
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+  color: #c0c4cc;
+}
+
+.el-upload {
+  input[type='file'] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block;
+  }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+  display: inline-flex !important;
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px; /*滚动条高度*/
+}
+::-webkit-scrollbar-thumb {
+  background-color: #9fa0a093; /*滚动条的背景颜色*/
+}
+.el-checkbox__inner {
+  border-color: rgb(161, 160, 160);
+  width: 12px;
+  height: 12px;
+}
+.el-menu-item,
+.el-sub-menu__title {
+  height: 40px;
+  line-height: 40px;
+}
+.el-sub-menu .el-menu-item {
+  height: 34px;
+  line-height: 34px;
+}
+.el-switch__core {
+  width: 38px;
+  height: 18px;
+}
+.el-switch__core:after {
+  width: 14px;
+  height: 14px;
+}
+.el-switch.is-checked .el-switch__core::after {
+  margin-left: -14.5px;
+}
+
+//.el-table__indent{
+//padding-left: 0!important;
+//content: ''
+//}
+-moz-.el-table .cell {
+  //解决火狐上明细分组出现...问题
+  text-overflow: clip;
+}
+// 避免线上loading不能覆盖页面的问题
+.el-loading-mask {
+  z-index: 100000 !important;
+  width: inherit !important;
+  height: inherit !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  color: rgb(22, 93, 255);
+}
+.el-checkbox-button.is-checked .el-checkbox-button__inner {
+  background-color: #165DFF!important;
+  border-color: #165DFF!important;
+  box-shadow: none !important;
+}
+.el-checkbox-button__inner:hover {
+  color: rgb(22, 93, 255);
+}
+.expandTable .el-table tr,
+.expandTable .el-table td,
+.expandTable .el-table th {
+  background: #fff5e3 !important;
+}
+
+.el-table__body tr.current-row > td.el-table__cell {
+  //加深验收
+  background-color: #f9e2d0 !important;
+}
+
+.el-input__inner,
+.el-textarea__inner {
+  &::placeholder {
+    color: #767d8a !important;
+  }
+
+  &::-webkit-input-placeholder {
+    /* WebKit browsers 适配谷歌 */
+    color: #767d8a !important;
+  }
+
+  &:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 适配火狐 */
+    color: #767d8a !important;
+  }
+
+  &::-moz-placeholder {
+    /* Mozilla Firefox 19+ 适配火狐 */
+    color: #767d8a !important;
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10+  适配ie*/
+    color: #767d8a !important;
+  }
+}
+.login-input {
+  .el-input__inner {
+    &::placeholder {
+      color: #ffffff !important;
+    }
+    &::-webkit-input-placeholder {
+      /* WebKit browsers 适配谷歌 */
+      color: #ffffff !important;
+    }
+    &:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 适配火狐 */
+      color: #ffffff !important;
+    }
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ 适配火狐 */
+      color: #ffffff !important;
+    }
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10+  适配ie*/
+      color: #ffffff !important;
+    }
+  }
+}
+.scan-input-box-disabeld {
+  display: flex;
+  .el-input-group__prepend {
+    color: #767d8a !important;
+    background-color: #dcdfe6 !important;
+    border-color: #e4e7ed !important;
+  }
+  .el-input__inner {
+    border-color: #e4e7ed !important;
+  }
+}
+.el-dropdown {
+  line-height: inherit;
+}
+// 防止输入框中右边有可点击项但不能所有位置点击的问题
+.el-input-group__append {
+  padding: 0;
+  min-width: 50px;
+  .el-icon {
+    width: 100%;
+    height: 100%;
+  }
+}
+.filter-input {
+  min-width: 150px !important;
+}
+// 降低表单间的报错信息上下间距
+.el-form-item {
+  margin-bottom: 12px !important;
+}
+.el-form-item .el-form-item__error {
+  padding-top: 0;
+}
+.collapseBody {
+  border-top: none;
+  .el-collapse-item__header {
+    border-bottom: none;
+    color: rgb(22, 93, 255);
+    font-weight: bold;
+  }
+}
+// 修改更多下拉框高度宽度
+.el-dropdown-menu__item {
+  padding: 0 6px !important;
+}
+// 数字框的样式部分重写
+.el-input-number {
+  .el-input-number__decrease,
+  .el-input-number__increase {
+    height: 50%;
+    box-sizing: border-box;
+  }
+  .el-input-number__decrease {
+    bottom: 1px;
+  }
+  .el-input {
+    vertical-align: baseline;
+  }
+}
+// label换行高度问题
+.el-form-item__label {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  padding: 0 6px 0 0 !important;
+}
+// 适度降低上传提示margin高度
+.el-upload__tip {
+  margin-top: 2px;
+}
+// 避免多选放不下样式bug
+.el-select__tags {
+  max-width: 100% !important;
+}
+.el-select__tags {
+  width: calc(100% - 30px) !important;
+}
+.el-select__tags-text {
+  max-width: 110px !important;
+}
+.el-tag {
+  max-width: 148px;
+}
+//
+.el-table .cell.el-tooltip {
+  min-width: 20px !important;
+}
+
+// 处理正式环境无法使用ctrl + a 或者鼠标选中输入框内容问题
+.el-input__inner::selection {
+  background: #3390ff;
+  color: #fff;
+}
+.el-popper:focus {
+  outline: none !important;
+}
+.el-loading-spinner .el-loading-text {
+  color: #165DFF!important;
+}
+
+// 下拉兼容wujie（展示位置错误）
+.el-popper {
+  position: absolute !important;
+}
+
+// 下拉兼容wujie（展示位置错误）
+.el-select-dropdown__wrap {
+  position: relative !important;
+}
+.el-message-box__btns {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+.el-message-box__btns button {
+  margin-left: 12px;
+}
+
+.el-input__inner,
+.el-range-input,
+.el-textarea__inner {
+  &::placeholder {
+    opacity: 0;
+  }
+}
+.scan-input-box .el-input__inner,
+.scan-input-box .el-range-input,
+.scan-input-box .el-textarea__inner,
+.show-placeholder .el-input__inner,
+.show-placeholder .el-textarea__inner,
+.show-placeholder .el-range-input {
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.el-tag.is-closable {
+  padding-right: 2px;
+}

@@ -1,0 +1,171 @@
+// 此js文件主要是为了共用全局的静态数据，避免在不同地方维护相同的数据
+let allDicts = {
+  messageTypeArr: [
+    { dictLabel: '流程待办', dictValue: 'SCHEDULE' },
+    { dictLabel: '流程完结', dictValue: 'COMPLETE' },
+  ],
+  uploadType: [
+    {
+      type: 'application/vnd.ms-powerpoint',
+      size: 50,
+      ext: 'ppt',
+      cate: 'office',
+    },
+    {
+      type: 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+      size: 50,
+      ext: 'pptx',
+      cate: 'office',
+    },
+    {
+      type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+      size: 10,
+      ext: 'xlsx',
+      cate: 'office',
+    },
+    {
+      type: 'application/vnd.ms-excel',
+      size: 10,
+      ext: 'xls',
+      cate: 'office',
+    },
+    {
+      type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+      size: 20,
+      ext: 'docx',
+      cate: 'office',
+    },
+    {
+      type: 'application/msword',
+      size: 20,
+      ext: 'doc',
+      cate: 'office',
+    },
+    {
+      type: 'text/plain',
+      size: 10,
+      ext: 'txt',
+      cate: 'office',
+    },
+    {
+      type: 'image/jpeg',
+      size: 50,
+      ext: 'jpeg',
+      cate: 'image',
+    },
+    {
+      type: 'image/jpg',
+      size: 50,
+      ext: 'jpg',
+      cate: 'image',
+    },
+    {
+      type: 'image/bmp',
+      size: 50,
+      ext: 'bmp',
+      cate: 'image',
+    },
+    {
+      type: 'image/png',
+      size: 50,
+      ext: 'png',
+      cate: 'image',
+    },
+    {
+      type: 'image/gif',
+      size: 50,
+      ext: 'pgifpt',
+      cate: 'image',
+    },
+    {
+      type: 'image/DNG',
+      ext: 'DNG',
+      cate: 'image',
+    },
+    {
+      type: 'image/tiff',
+      size: 50,
+      ext: 'tiff',
+      cate: 'image',
+    },
+    {
+      type: 'image/CR2',
+      size: 50,
+      ext: 'CR2',
+      cate: 'image',
+    },
+    {
+      type: 'image/NEF',
+      size: 50,
+      ext: 'NEF',
+      cate: 'image',
+    },
+    {
+      type: 'application/pdf',
+      size: 20,
+      ext: 'pdf',
+      cate: 'pdf',
+    },
+    {
+      type: 'application/zip',
+      size: 1024,
+      ext: 'zip',
+      cate: 'file',
+    },
+    {
+      type: 'rar',
+      size: 1024,
+      ext: 'rar',
+      cate: 'file',
+    },
+    {
+      type: 'video/mp4',
+      size: 2048,
+      ext: 'mp4',
+      cate: 'video',
+    },
+    {
+      type: 'video/avi',
+      size: 2048,
+      ext: 'avi',
+      cate: 'video',
+    },
+    {
+      type: 'video/x-ms-wmv',
+      size: 2048,
+      ext: 'wmv',
+      cate: 'video',
+    },
+    {
+      type: 'rm',
+      size: 2048,
+      ext: 'rm',
+      cate: 'video',
+    },
+    {
+      type: 'rmvb',
+      size: 2048,
+      ext: 'rmvb',
+      cate: 'video',
+    },
+    {
+      type: 'video/quicktime',
+      size: 2048,
+      ext: 'mov',
+      cate: 'video',
+    },
+    {
+      type: 'flv',
+      size: 2048,
+      ext: 'flv',
+      cate: 'video',
+    },
+    {
+      type: 'video/3gpp',
+      size: 2048,
+      ext: '3gp',
+      cate: 'video',
+    },
+  ],
+}
+export default allDicts

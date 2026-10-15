@@ -1,0 +1,146 @@
+.fontSizeDefault {
+  //表格
+  .el-table--default {
+    font-size: 14px !important;
+  }
+  //placeholder
+  .el-input__inner,
+  .el-textarea__inner {
+    // height: 28px!important;
+    // min-height: 28px!important;
+    &::placeholder {
+      font-size: 14px !important;
+    }
+
+    &::-webkit-input-placeholder {
+      /* WebKit browsers 适配谷歌 */
+      font-size: 14px !important;
+    }
+
+    &:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 适配火狐 */
+      font-size: 14px !important;
+    }
+
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ 适配火狐 */
+      font-size: 14px !important;
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10+  适配ie*/
+      font-size: 14px !important;
+    }
+  }
+  //表单
+  .el-form-item__content,
+  .el-form-item__label {
+    font-size: 14px !important;
+  }
+  .el-form-item__label {
+    color: #888;
+  }
+  .el-form-item__content {
+    color: #333;
+  }
+  //开关样式
+  .el-switch__label * {
+    font-size: 14px;
+  }
+  //单选
+  .el-radio__label {
+    font-size: 14px;
+  }
+  //tabs
+  .el-tabs__item {
+    font-size: 14px;
+  }
+  //tree
+  .el-tree-node__label {
+    font-size: 14px;
+  }
+  .model-panel .model-panel-title p {
+    font-size: 16px;
+  }
+  .fullModel-title {
+    font-size: 14px;
+  }
+  //上传提示
+  .el-upload__tip {
+    font-size: 14px;
+  }
+  //下拉
+  .el-select-dropdown__item {
+    padding: 0 10px;
+    height: 32px;
+    line-height: 32px;
+    span {
+      font-size: 14px;
+    }
+  }
+  //偏好设置
+  .draggable-wrap-item {
+    font-size: 14px;
+  }
+  #app {
+    font-size: 14px;
+  }
+  .el-input{
+    height: 28px !important;
+    line-height: 28px !important;
+  }
+  .el-input__inner {
+    height: 28px !important;
+    line-height: 28px !important;
+  }
+  .filter-item .el-checkbox{
+    height: 28px !important;
+  }
+  .el-date-editor {
+    height: 28px !important;
+    line-height: 28px !important;
+    .el-range-input {
+      height: 28px !important;
+      line-height: 28px !important;
+    }
+  }
+  // 数字输入框的高度缩小
+  .el-input-number {
+    height: 28px !important;
+    line-height: 28px !important;
+    .el-input-number__decrease,
+    .el-input-number__increase {
+      height: 50%;
+      line-height: 16px !important;
+    }
+  }
+  // 缩小表单上下之间的距离
+  .el-form-item__label {
+    min-height: 28px;
+    height: auto;
+    line-height: 28px;
+  }
+  .el-form-item__content {
+    line-height: 28px;
+  }
+  // 修改input以及下拉框高度
+  .el-input__inner {
+    height: 28px !important;
+    line-height: 28px;
+  }
+  .el-input__wrapper {
+    padding: 0 7px;
+  }
+  // 时间组件
+  .el-date-editor.el-input__wrapper {
+    height: 28px;
+    .el-range-input {
+      height: 28px;
+      line-height: 28px;
+    }
+  }
+}
+// 详情页基础信息label高度
+.el-form-item__label {
+  line-height: 14px !important;
+}
